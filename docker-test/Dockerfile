@@ -18,7 +18,10 @@ COPY ./requirements.txt /app/requirements.txt
 
 WORKDIR /app
 RUN pip3 install --upgrade pip
+RUN pip3 install PyYAML
 RUN pip3 install -r requirements.txt
+RUN pip3 install Flask-Assets
+RUN pip3 install secrets
 
 COPY . /app
 COPY ./docker/entrypoint.sh /usr/local/bin/

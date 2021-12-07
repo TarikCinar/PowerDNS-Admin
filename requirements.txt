@@ -24,7 +24,9 @@ bravado-core==5.17.0
 lima==0.5
 pytest==6.1.1
 pytimeparse==1.1.8
-PyYAML==5.4
+#PyYAML==6.0 #default 5.4
 Flask-SSLify==0.1.5
 Flask-Mail==0.9.1
 flask-session==0.3.2
+#secrets==1.0.2 #absent on default
+#pyOpenSSL==21.0.0 #abasent on default
